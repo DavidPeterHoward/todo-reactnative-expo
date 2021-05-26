@@ -4,12 +4,8 @@ import styled from 'styled-components/native';
 import useTodoState from "./hooks/useTodoState";
   
 
+import { DEFAULT_ITEMS } from "./utils/mockdata/DEFAULT_ITEMS"
 
-const DEFAULT_ITEMS = [
-  {id: 1, text: "Dinner with Jess", completed: false, category: "personal"},
-  {id: 2, text: "Pay Rent", completed: true, category: "personal"},
-  {id: 3, text: "Learn monads", completed: false, category: "work"},
-]
 
 let screenHeight = Dimensions.get('window').height;
 
