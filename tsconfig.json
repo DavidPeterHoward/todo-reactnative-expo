@@ -16,5 +16,5 @@
     "noUnusedParameters": true,
     "esModuleInterop": true
   },
-  // "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base"
 }
