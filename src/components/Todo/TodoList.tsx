@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import {Text, View, Button, TextInput, SafeAreaView, NativeSyntheticEvent, TextInputChangeEventData, NativeTouchEvent, TouchableOpacity, FlatList } from 'react-native';
-import styled, { css } from 'styled-components/native'
-
-import TodoItem from "./TodoItem/TodoItem"
+import React from 'react';
+import styled from 'styled-components/native';
 import { ITodo } from "../../types/ITodo";
+import TodoItem from "./TodoItem/TodoItem";
+
 
 // Container Component for TodoItem (Presentational Component)
 const TodoList = ({todos = [], ...props}: ITodo): JSX.Element => {

@@ -1,10 +1,10 @@
 
-import React, { useState, useEffect } from 'react';
-import {Text, View, Button, TextInput, SafeAreaView, NativeSyntheticEvent, TextInputChangeEventData, NativeTouchEvent, TouchableOpacity, FlatList } from 'react-native';
-import styled, { css } from 'styled-components/native'
-
+import React from 'react';
+import { NativeSyntheticEvent, NativeTouchEvent, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import styled, { css } from 'styled-components/native';
 import { ITodo } from "../../../types/ITodo";
+
 
 const TodoItem = ({id, text, completed, category, deleteTodo, editTodo, toggleComplete}: ITodo): JSX.Element => {
   return(
@@ -39,7 +39,6 @@ const View_TodoItemContainer = styled.View<any>`
   min-width: 80%;
   display: flex;
   flex-direction: row;
-  /* box-shadow: 0px 3px 6px 6px rgba(0,0,0,0.16); */
   /* font-family: 'Roboto', sans-serif; */
   shadow-color: #000;
   shadow-offset: 4px 2px;
